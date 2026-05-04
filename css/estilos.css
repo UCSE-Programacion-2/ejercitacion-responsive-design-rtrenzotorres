@@ -1,4 +1,4 @@
-/* Estilos Generales */
+/* Estilos Generales  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;300&display=swap');
 
 :root {
@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300px;
+    font-weight: 300;
 }
 
 img {
@@ -60,9 +60,8 @@ nav ul li a {
 }
 
 .bg-header h1 {
-    font-weight: 500px;
+    font-weight: 500;
 }
-
 /* Estilos section */
 section,
 footer {
@@ -184,3 +183,150 @@ footer ul {
 
 /*** Responsive */
 
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 10px;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .bg-header {
+        height: 250px;
+        background-position: center;
+    }
+
+    .bg-header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    section,
+    footer {
+        padding: 35px 20px;
+    }
+
+    section > div,
+    #card-section > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 520px;
+        margin: 20px 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulario,
+    .contacto {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 35px 30px 20px;
+    }
+
+    .contacto {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        padding: 12px 8px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+        padding: 4px;
+    }
+
+    .bg-header {
+        height: 230px;
+        background-position: center;
+    }
+
+    .bg-header h1 {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+
+    section,
+    footer {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 18px;
+        margin: 18px 0;
+        border-radius: 12px;
+    }
+
+    .card > h3 {
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+
+    .card p {
+        font-size: 0.85rem;
+    }
+
+    .formulario {
+        padding: 10px 0;
+    }
+
+    form {
+        padding: 30px 25px 18px;
+    }
+
+    .contacto p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding: 30px 25px;
+    }
+
+    .news-letter > input[type="submit"] {
+        width: 80px;
+        font-size: 0.75rem;
+    }
+}
